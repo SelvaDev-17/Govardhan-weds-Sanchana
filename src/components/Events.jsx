@@ -20,8 +20,12 @@ const Events = () => {
     >
       <div className="absolute inset-0 bg-gradient-to-br from-cream/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
       
-      <div className="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full flex items-center justify-center mb-6 md:mb-8 border border-soft-gold/30 shadow-sm relative z-10 transition-transform duration-700 group-hover:scale-110" style={{ backgroundColor: "var(--color-bg-primary)" }}>
-        <span className="text-soft-gold text-2xl md:text-3xl">🌿</span>
+      <div className="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full flex items-center justify-center mb-6 md:mb-8 border border-soft-gold/30 shadow-sm relative z-10 transition-transform duration-700 group-hover:scale-110 p-3 md:p-4" style={{ backgroundColor: "var(--color-bg-primary)" }}>
+        <img 
+           src={`${import.meta.env.BASE_URL}ring.png`}
+           alt="Wedding Ring Icon"
+           className="w-full h-full object-contain drop-shadow-sm"
+        />
       </div>
 
       <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl text-text-main mb-4 md:mb-6 font-normal tracking-wide">{title}</h3>

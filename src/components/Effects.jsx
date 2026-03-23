@@ -52,7 +52,7 @@ export const MusicToggle = () => {
 
 export const FloralCorners = () => {
   return (
-    <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
+    <div className="fixed inset-0 z-[50] pointer-events-none overflow-hidden">
       {/* Left Floral Border */}
       <motion.img 
         src={`${import.meta.env.BASE_URL}floral_side.png`}

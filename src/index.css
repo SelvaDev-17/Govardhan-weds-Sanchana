@@ -40,25 +40,25 @@
   }
 
   html.dark {
-    /* Evening Minimalist Dark Theme */
-    --color-bg-primary: #0A0C14; /* Deep luxury navy black */
-    --color-bg-secondary: #101420;
-    --color-accent: #E8C37D;    /* Vivid bright gold */
+    /* Evening Luxurious Midnight Bronze Theme */
+    --color-bg-primary: #120F0D; /* Deep Espresso / Black */
+    --color-bg-secondary: #1A1512;
+    --color-accent: #D4AF37;    /* Vivid bright gold */
     --color-accent-2: #8AB8A8;
     --color-accent-3: #5C3A46;
     --color-text-primary: #F4EBE0; /* Warm starlight */
     --color-text-secondary: #B8B0A0;
 
-    /* Stunning Sapphire/Navy Glass */
-    --glass-card-border: rgba(232, 195, 125, 0.25); 
-    --glass-card-bg-start: rgba(25, 45, 80, 0.65); /* Rich glowing navy */
-    --glass-card-bg-end: rgba(10, 15, 25, 0.85);
-    --glass-panel-bg-start: rgba(30, 50, 90, 0.55); 
-    --glass-panel-bg-end: rgba(10, 15, 25, 0.8);
+    /* Stunning Bronze / Espresso Glass */
+    --glass-card-border: rgba(212, 175, 55, 0.25); 
+    --glass-card-bg-start: rgba(50, 35, 25, 0.65); /* Rich warm espresso glow */
+    --glass-card-bg-end: rgba(20, 12, 10, 0.85);
+    --glass-panel-bg-start: rgba(60, 40, 30, 0.55); 
+    --glass-panel-bg-end: rgba(20, 12, 10, 0.8);
 
-    /* Elegant Inverted Evening Flowers! */
+    /* Elegant Stylized Metallic Gold Foil Flowers */
     --blend-floral: screen;
-    --filter-floral: invert(1) hue-rotate(180deg) brightness(0.65) contrast(1.5) saturate(1.8);
+    --filter-floral: invert(1) sepia(1) saturate(4) hue-rotate(350deg) brightness(1.2) contrast(1.4);
   }
 
   body {

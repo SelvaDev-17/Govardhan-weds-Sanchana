@@ -36,7 +36,7 @@
     /* Image Blend Modes */
     /* Use heavy contrast to back-light/darken flowers WITHOUT pushing white background to grey */
     --blend-floral: darken;
-    --filter-floral: contrast(1.5) saturate(1.3) drop-shadow(0 0 10px rgba(255,255,255,0.9));
+    --filter-floral: contrast(1.5) saturate(1.3);
   }
 
   html.dark {
@@ -58,7 +58,7 @@
 
     /* Elegant Inverted Evening Flowers! */
     --blend-floral: screen;
-    --filter-floral: invert(1) hue-rotate(180deg) brightness(0.65) contrast(1.5) saturate(1.8) drop-shadow(0 0 25px rgba(232,195,125,0.4));
+    --filter-floral: invert(1) hue-rotate(180deg) brightness(0.65) contrast(1.5) saturate(1.8);
   }
 
   body {

@@ -9,7 +9,7 @@ const Events = () => {
     })
   };
 
-  const EventCard = ({ title, date, time, custom }) => (
+  const EventCard = ({ title, date, time, icon, custom }) => (
     <motion.div
       custom={custom}
       variants={cardVariants}
@@ -22,8 +22,8 @@ const Events = () => {
       
       <div className="w-16 h-16 md:w-20 md:h-20 mx-auto rounded-full flex items-center justify-center mb-6 md:mb-8 border border-soft-gold/30 shadow-sm relative z-10 transition-transform duration-700 group-hover:scale-110 p-3 md:p-4" style={{ backgroundColor: "var(--color-bg-primary)" }}>
         <img 
-           src={`${import.meta.env.BASE_URL}ring.png`}
-           alt="Wedding Ring Icon"
+           src={`${import.meta.env.BASE_URL}${icon}`}
+           alt={`${title} Icon`}
            className="w-full h-full object-contain drop-shadow-sm"
         />
       </div>
@@ -53,8 +53,8 @@ const Events = () => {
         </motion.div>
 
         <div className="flex flex-col md:flex-row gap-8 sm:gap-10 md:gap-16 justify-center w-full">
-           <EventCard title="Reception" date="Sunday, April 19, 2026" time="7:00 PM onwards" custom={1} />
-           <EventCard title="Muhurtham" date="Monday, April 20, 2026" time="6:00 AM – 7:30 AM" custom={2} />
+           <EventCard title="Reception" date="Sunday, April 19, 2026" time="7:00 PM onwards" icon="ring.png" custom={1} />
+           <EventCard title="Muhurtham" date="Monday, April 20, 2026" time="6:00 AM – 7:30 AM" icon="muhurtham.png" custom={2} />
         </div>
       </div>
     </section>

@@ -28,15 +28,15 @@ const Countdown = () => {
   }, []);
 
   const TimeBlock = ({ value, label }) => (
-    <div className="flex flex-col items-center justify-center p-4 md:p-8 glass-card-light rounded-3xl mx-2 w-20 md:w-36 transition-transform duration-500 hover:-translate-y-2 hover:shadow-[0_15px_40px_-15px_rgba(197,164,126,0.3)]">
-      <span className="text-3xl md:text-5xl font-serif text-text-main mb-2 md:mb-3 font-light">{value}</span>
-      <span className="text-[10px] md:text-sm font-sans tracking-[0.2em] text-text-light uppercase font-medium">{label}</span>
+    <div className="flex flex-col items-center justify-center p-3 sm:p-5 md:p-8 glass-card-light rounded-xl sm:rounded-2xl md:rounded-3xl mx-1 sm:mx-2 w-[65px] sm:w-[85px] md:w-36 transition-transform duration-500 hover:-translate-y-2 hover:shadow-[0_15px_40px_-15px_rgba(197,164,126,0.3)]">
+      <span className="text-2xl sm:text-3xl md:text-5xl font-serif text-text-main mb-1 sm:mb-2 md:mb-3 font-light">{value}</span>
+      <span className="text-[9px] sm:text-[10px] md:text-sm font-sans tracking-widest sm:tracking-[0.2em] text-text-light uppercase font-medium">{label}</span>
     </div>
   );
 
   return (
-    <section className="relative w-full py-32 bg-transparent overflow-hidden flex flex-col items-center">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cream rounded-full blur-[120px] pointer-events-none"></div>
+    <section className="relative w-full py-24 md:py-32 bg-transparent overflow-hidden flex flex-col items-center">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] md:w-[600px] h-[400px] md:h-[600px] bg-cream rounded-full blur-[120px] pointer-events-none"></div>
 
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -45,7 +45,7 @@ const Countdown = () => {
         transition={{ duration: 1.5, ease: "easeOut" }}
         className="text-center z-10 px-4"
       >
-        <h2 className="text-3xl md:text-5xl font-serif text-text-main mb-6 tracking-wide font-normal">Our forever begins soon</h2>
+        <h2 className="text-2xl sm:text-3xl md:text-5xl font-serif text-text-main mb-4 md:mb-6 tracking-wide font-normal">Our forever begins soon</h2>
         <div className="w-32 h-[1px] bg-gradient-to-r from-transparent via-soft-gold to-transparent mx-auto mb-16 opacity-60"></div>
       </motion.div>
 

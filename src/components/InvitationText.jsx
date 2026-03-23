@@ -13,11 +13,11 @@ const InvitationText = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 1.5, ease: "easeOut" }}
-        className="max-w-4xl mx-auto text-center glass-panel-light rounded-[3rem] p-12 md:p-24 relative"
+        className="max-w-4xl mx-auto text-center glass-panel-light rounded-[2rem] md:rounded-[3rem] p-8 sm:p-12 md:p-24 relative"
       >
         {/* Decorative gold floral dividers */}
-        <div className="absolute top-8 left-1/2 -translate-x-1/2 w-32 h-[1px] bg-gradient-to-r from-transparent via-soft-gold/80 to-transparent"></div>
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-32 h-[1px] bg-gradient-to-r from-transparent via-soft-gold/80 to-transparent"></div>
+        <div className="absolute top-6 md:top-8 left-1/2 -translate-x-1/2 w-24 md:w-32 h-[1px] bg-gradient-to-r from-transparent via-soft-gold/80 to-transparent"></div>
+        <div className="absolute bottom-6 md:bottom-8 left-1/2 -translate-x-1/2 w-24 md:w-32 h-[1px] bg-gradient-to-r from-transparent via-soft-gold/80 to-transparent"></div>
 
         <motion.div
            initial={{ opacity: 0, y: 20 }}
@@ -25,15 +25,15 @@ const InvitationText = () => {
            viewport={{ once: true }}
            transition={{ delay: 0.4, duration: 1.5 }}
         >
-          <p className="font-serif text-xl md:text-3xl text-text-light leading-relaxed md:leading-[2.5] tracking-wide mb-16">
+          <p className="font-serif text-base sm:text-xl md:text-3xl text-text-light leading-relaxed md:leading-[2.5] tracking-wide mb-10 md:mb-16">
             <span className="text-text-main font-semibold">Mr. A. Singaram</span> &amp; <span className="text-text-main font-semibold">Mrs. S. Jayalakshmi</span>
-            <br className="hidden md:block"/> request the honour of your presence<br className="hidden md:block"/> with your family and friends<br/> on the marriage occasion of their son
+            <br className="hidden sm:block"/> request the honour of your presence<br className="hidden sm:block"/> with your family and friends<br/> on the marriage occasion of their son
           </p>
 
-          <div className="my-16 flex flex-col items-center justify-center space-y-6">
-             <h3 className="font-serif text-5xl md:text-6xl text-text-main tracking-wide">S. Govardan</h3>
-             <span className="text-soft-gold italic font-serif text-3xl md:text-4xl">with</span>
-             <h3 className="font-serif text-5xl md:text-6xl text-text-main tracking-wide">U. Sanchana</h3>
+          <div className="my-10 md:my-16 flex flex-col items-center justify-center space-y-4 md:space-y-6">
+             <h3 className="font-serif text-3xl sm:text-5xl md:text-6xl text-text-main tracking-wide">S. Govardan</h3>
+             <span className="text-soft-gold italic font-serif text-2xl sm:text-3xl md:text-4xl">with</span>
+             <h3 className="font-serif text-3xl sm:text-5xl md:text-6xl text-text-main tracking-wide">U. Sanchana</h3>
           </div>
         </motion.div>
 

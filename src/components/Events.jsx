@@ -16,18 +16,18 @@ const Events = () => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-50px" }}
-      className="glass-card-light rounded-[2.5rem] p-10 md:p-14 text-center w-full max-w-lg mx-auto relative overflow-hidden group border border-white transition-all duration-700 hover:-translate-y-3 hover:shadow-[0_25px_50px_-20px_rgba(197,164,126,0.2)]"
+      className="glass-card-light rounded-[2rem] md:rounded-[2.5rem] p-8 sm:p-10 md:p-14 text-center w-full max-w-[90%] md:max-w-lg mx-auto relative overflow-hidden group border border-white transition-all duration-700 hover:-translate-y-3 hover:shadow-[0_25px_50px_-20px_rgba(197,164,126,0.2)]"
     >
       <div className="absolute inset-0 bg-gradient-to-br from-cream/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
       
-      <div className="w-20 h-20 mx-auto bg-white rounded-full flex items-center justify-center mb-8 border border-soft-gold/20 shadow-sm relative z-10 transition-transform duration-700 group-hover:scale-110">
-        <span className="text-soft-gold text-3xl">🌿</span>
+      <div className="w-16 h-16 md:w-20 md:h-20 mx-auto bg-white rounded-full flex items-center justify-center mb-6 md:mb-8 border border-soft-gold/20 shadow-sm relative z-10 transition-transform duration-700 group-hover:scale-110">
+        <span className="text-soft-gold text-2xl md:text-3xl">🌿</span>
       </div>
 
-      <h3 className="font-serif text-4xl md:text-5xl text-text-main mb-6 font-normal tracking-wide">{title}</h3>
-      <div className="space-y-3 font-sans text-text-light">
-        <p className="text-lg md:text-xl tracking-wide text-text-main font-medium">{date}</p>
-        <p className="font-light tracking-wide">{time}</p>
+      <h3 className="font-serif text-3xl sm:text-4xl md:text-5xl text-text-main mb-4 md:mb-6 font-normal tracking-wide">{title}</h3>
+      <div className="space-y-2 md:space-y-3 font-sans text-text-light px-2">
+        <p className="text-base sm:text-lg md:text-xl tracking-wide text-text-main font-medium">{date}</p>
+        <p className="text-sm sm:text-base font-light tracking-wide">{time}</p>
       </div>
 
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-1/2 h-[1px] bg-gradient-to-r from-transparent via-soft-gold/30 to-transparent"></div>
@@ -42,13 +42,13 @@ const Events = () => {
            whileInView={{ opacity: 1, y: 0 }}
            viewport={{ once: true }}
            transition={{ duration: 1.5 }}
-           className="mb-20 text-center"
+           className="mb-12 md:mb-20 text-center"
         >
-          <h2 className="font-serif text-5xl md:text-6xl text-text-main mb-6">Wedding Events</h2>
-          <div className="w-24 h-[1px] bg-soft-gold/60 mx-auto"></div>
+          <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl text-text-main mb-4 md:mb-6">Wedding Events</h2>
+          <div className="w-16 md:w-24 h-[1px] bg-soft-gold/60 mx-auto"></div>
         </motion.div>
 
-        <div className="flex flex-col md:flex-row gap-10 md:gap-16 justify-center w-full">
+        <div className="flex flex-col md:flex-row gap-8 sm:gap-10 md:gap-16 justify-center w-full">
            <EventCard title="Reception" date="Sunday, April 19, 2026" time="7:00 PM onwards" custom={1} />
            <EventCard title="Muhurtham" date="Monday, April 20, 2026" time="6:00 AM – 7:30 AM" custom={2} />
         </div>

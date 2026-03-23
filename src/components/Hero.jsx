@@ -33,7 +33,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, delay: 1 }}
-          className="text-text-light font-sans tracking-[0.3em] md:tracking-[0.4em] text-xs md:text-sm uppercase mb-8 font-medium"
+          className="text-text-light font-sans tracking-[0.2em] sm:tracking-[0.3em] md:tracking-[0.4em] text-[10px] sm:text-xs md:text-sm uppercase mb-6 md:mb-8 font-medium"
         >
           Two hearts. One journey.
         </motion.h2>
@@ -42,18 +42,18 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5, delay: 1.2 }}
-          className="font-serif text-5xl md:text-7xl lg:text-8xl text-text-main mb-10 drop-shadow-sm font-normal tracking-wide"
+          className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl text-text-main mb-8 md:mb-10 drop-shadow-sm font-normal tracking-wide"
         >
-          <span className="block mb-3">S. Govardan</span>
-          <span className="text-soft-gold font-light italic block my-3 md:inline md:my-0 md:mx-8 text-glow-soft">&amp;</span>
-          <span className="block mt-3">U. Sanchana</span>
+          <span className="block mb-2 md:mb-3">S. Govardan</span>
+          <span className="text-soft-gold font-light italic block my-2 md:my-3 md:inline md:mx-8 text-glow-soft">&amp;</span>
+          <span className="block mt-2 md:mt-3">U. Sanchana</span>
         </motion.h1>
 
         <motion.p 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.5, delay: 1.6 }}
-          className="text-lg md:text-2xl font-serif text-text-light mb-14 tracking-[0.2em] uppercase"
+          className="text-sm sm:text-lg md:text-2xl font-serif text-text-light mb-10 md:mb-14 tracking-[0.2em] uppercase"
         >
           Forever begins here
         </motion.p>

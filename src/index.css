@@ -37,10 +37,10 @@
     background-blend-mode: multiply;
   }
   .glass-card-light {
-    @apply bg-white/70 backdrop-blur-xl border border-white shadow-[0_10px_40px_-10px_rgba(197,164,126,0.15)];
+    @apply bg-gradient-to-br from-cream/90 to-[#FCE8D5]/80 backdrop-blur-xl border border-white/90 shadow-[0_10px_40px_-10px_rgba(197,164,126,0.25)];
   }
   .glass-panel-light {
-    @apply bg-white/60 backdrop-blur-2xl border border-white/80 shadow-[0_15px_50px_-15px_rgba(44,44,44,0.06)];
+    @apply bg-gradient-to-br from-cream/80 to-[#FCF0E1]/85 backdrop-blur-3xl border border-white/80 shadow-[0_15px_50px_-15px_rgba(197,164,126,0.15)];
   }
   .text-glow-soft {
     text-shadow: 0 0 20px rgba(197, 164, 126, 0.4);

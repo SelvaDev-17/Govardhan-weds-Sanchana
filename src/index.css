@@ -1,12 +1,13 @@
 @import "tailwindcss";
 
 @theme {
-  --color-pastel-bg: #FCF8F5;
-  --color-pastel-pink: #F4D6D2;
-  --color-pastel-gold: #D2B48C;
-  --color-pastel-peach: #FFE5D9;
-  --color-text-main: #4A3B32;
-  --color-text-light: #7A6357;
+  --color-light-bg: #FAF9F6;
+  --color-cream: #FFF8F0;
+  --color-soft-gold: #C5A47E;
+  --color-sage-green: #A8C3A0;
+  --color-blush-pink: #FADADD;
+  --color-text-main: #2C2C2C;
+  --color-text-light: #5A5A5A;
 
   --font-serif: "Playfair Display", serif;
   --font-sans: "Inter", sans-serif;
@@ -16,7 +17,7 @@
 
 @layer base {
   body {
-    background-color: var(--color-pastel-bg);
+    background-color: var(--color-light-bg);
     color: var(--color-text-main);
     font-family: var(--font-sans);
     overflow-x: hidden;
@@ -26,23 +27,25 @@
   
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-serif);
+    font-weight: 400;
   }
 }
 
 @layer utilities {
-  .glass-card {
-    @apply bg-white/40 backdrop-blur-md border border-white/60 shadow-[0_8px_32px_rgba(210,180,140,0.15)];
+  .paper-texture {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.03'/%3E%3C/svg%3E");
+    background-blend-mode: multiply;
   }
-  .glass-panel {
-    @apply bg-white/50 backdrop-blur-xl border border-white/70 shadow-xl;
+  .glass-card-light {
+    @apply bg-white/70 backdrop-blur-xl border border-white shadow-[0_10px_40px_-10px_rgba(197,164,126,0.15)];
   }
-  .glass-card-pastel {
-    @apply bg-white/60 backdrop-blur-xl border border-white/80 shadow-[0_10px_40px_rgba(244,214,210,0.4)];
+  .glass-panel-light {
+    @apply bg-white/60 backdrop-blur-2xl border border-white/80 shadow-[0_15px_50px_-15px_rgba(44,44,44,0.06)];
   }
-  .text-glow-gold {
-    text-shadow: 0 0 15px rgba(210, 180, 140, 0.4);
+  .text-glow-soft {
+    text-shadow: 0 0 20px rgba(197, 164, 126, 0.4);
   }
-  .text-glow-pink {
-    text-shadow: 0 0 15px rgba(244, 214, 210, 0.6);
+  .btn-gold {
+    @apply px-8 py-4 bg-white/80 backdrop-blur-md rounded-full text-text-main font-sans font-medium hover:bg-soft-gold hover:text-white hover:shadow-[0_0_20px_rgba(197,164,126,0.4)] transition-all duration-500 border border-soft-gold/40;
   }
 }

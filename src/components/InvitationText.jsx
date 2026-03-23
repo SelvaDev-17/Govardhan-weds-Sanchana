@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const InvitationText = () => {
   return (
-    <section className="relative w-full py-32 md:py-48 px-6 flex items-center justify-center z-20 overflow-hidden bg-light-bg">
+    <section className="relative w-full py-32 md:py-48 px-6 flex items-center justify-center z-20 overflow-hidden bg-transparent">
       {/* Soft daylight background glows */}
       <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-cream rounded-full blur-[100px] -z-10"></div>
       <div className="absolute bottom-1/4 left-1/4 w-[400px] h-[400px] bg-blush-pink/20 rounded-full blur-[120px] -z-10"></div>

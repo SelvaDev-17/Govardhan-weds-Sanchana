@@ -18,7 +18,18 @@ function App() {
   }, []);
 
   return (
-    <div className="relative w-full min-h-screen overflow-hidden bg-light-bg text-text-main font-sans selection:bg-blush-pink selection:text-text-main paper-texture">
+    <div className="relative w-full min-h-screen overflow-hidden bg-transparent text-text-main font-sans selection:bg-blush-pink selection:text-text-main paper-texture">
+      {/* Global Fixed Rings Background */}
+      <div className="fixed inset-0 w-full h-full pointer-events-none -z-10">
+        <img 
+           src={`${import.meta.env.BASE_URL}warm_rings.png`} 
+           alt="Wedding Rings Background"
+           className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-cream/75 backdrop-blur-[10px]"></div>
+        <div className="absolute inset-0 bg-gradient-to-tr from-soft-gold/20 via-transparent to-blush-pink/20 mix-blend-multiply"></div>
+      </div>
+
       <AnimatePresence>
         {loading && (
           <motion.div 

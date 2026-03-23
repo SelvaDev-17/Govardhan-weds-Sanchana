@@ -35,7 +35,7 @@ const Events = () => {
   );
 
   return (
-    <section className="py-32 px-6 relative z-10 bg-light-bg">
+    <section className="py-32 px-6 relative z-10 bg-transparent">
       <div className="max-w-6xl mx-auto flex flex-col items-center">
         <motion.div 
            initial={{ opacity: 0, y: 30 }}

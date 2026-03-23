@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Venue = () => {
   return (
-    <section className="relative py-32 px-6 z-10 overflow-hidden bg-light-bg">
+    <section className="relative py-32 px-6 z-10 overflow-hidden bg-transparent">
       <div className="absolute top-1/2 right-0 w-[500px] h-[500px] bg-sage-green/10 rounded-full blur-[150px] -z-10"></div>
       
       <div className="max-w-5xl mx-auto flex flex-col items-center">

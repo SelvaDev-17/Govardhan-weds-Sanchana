@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 const Footer = () => {
   return (
-    <footer className="relative py-24 text-center bg-light-bg z-10 overflow-hidden">
+    <footer className="relative py-24 text-center bg-transparent z-10 overflow-hidden">
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-cream rounded-full blur-[140px] pointer-events-none"></div>
 
       {/* Decorative top border */}

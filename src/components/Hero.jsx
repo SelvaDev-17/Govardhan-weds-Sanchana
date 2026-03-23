@@ -4,28 +4,11 @@ import { ChevronDown } from 'lucide-react';
 
 const Hero = () => {
   const { scrollY } = useScroll();
-  const y1 = useTransform(scrollY, [0, 1000], [0, 200]);
   const y2 = useTransform(scrollY, [0, 1000], [0, -100]);
   const opacity = useTransform(scrollY, [0, 400], [1, 0]);
-  const scale = useTransform(scrollY, [0, 1000], [1, 1.05]);
 
   return (
-    <section className="relative h-[100svh] w-full flex items-center justify-center overflow-hidden z-10 bg-light-bg origin-top">
-      {/* Background Image handling cinematic daylight */}
-      <motion.div 
-        className="absolute inset-0 w-full h-full pointer-events-none"
-        style={{ y: y1, scale }}
-      >
-        <img 
-           src={`${import.meta.env.BASE_URL}warm_rings.png`} 
-           alt="Wedding Rings Background"
-           className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-cream/70 backdrop-blur-[6px]"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-light-bg via-transparent to-light-bg/60"></div>
-        <div className="absolute inset-0 bg-gradient-to-tr from-soft-gold/20 via-transparent to-blush-pink/10 mix-blend-multiply"></div>
-      </motion.div>
-
+    <section className="relative h-[100svh] w-full flex items-center justify-center overflow-hidden z-10 bg-transparent origin-top">
       {/* Main Content with vastly increased spacing */}
       <motion.div 
         style={{ y: y2, opacity }}

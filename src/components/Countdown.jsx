@@ -35,7 +35,7 @@ const Countdown = () => {
   );
 
   return (
-    <section className="relative w-full py-32 bg-light-bg overflow-hidden flex flex-col items-center">
+    <section className="relative w-full py-32 bg-transparent overflow-hidden flex flex-col items-center">
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-cream rounded-full blur-[120px] pointer-events-none"></div>
 
       <motion.div

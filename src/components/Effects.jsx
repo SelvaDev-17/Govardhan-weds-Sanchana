@@ -95,7 +95,7 @@ export const FloralCorners = () => {
   return (
     <>
       <svg style={{ width: 0, height: 0, position: 'absolute', pointerEvents: 'none' }}>
-        <filter id="remove-white" colorInterpolationFilters="sRGB" x="0%" y="0%" width="100%" height="100%">
+        <filter id="remove-white" colorInterpolationFilters="sRGB">
           <feColorMatrix
             type="matrix"
             values="1   0   0   0   0

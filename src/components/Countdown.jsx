@@ -7,9 +7,7 @@ const Countdown = () => {
   });
 
   useEffect(() => {
-    // April 20, 2026 06:00:00
     const targetDate = new Date('2026-04-20T06:00:00').getTime();
-
     const interval = setInterval(() => {
       const now = new Date().getTime();
       const difference = targetDate - now;
@@ -30,26 +28,25 @@ const Countdown = () => {
   }, []);
 
   const TimeBlock = ({ value, label }) => (
-    <div className="flex flex-col items-center justify-center p-3 md:p-6 glass-card-neon rounded-2xl mx-1 w-[72px] md:w-32 border-neon-purple/40">
-      <span className="text-2xl md:text-5xl font-serif text-neon-gold text-glow-gold mb-1 md:mb-2">{value}</span>
-      <span className="text-[10px] md:text-sm font-sans tracking-widest text-white uppercase opacity-80">{label}</span>
+    <div className="flex flex-col items-center justify-center p-3 md:p-6 glass-card-pastel rounded-2xl mx-1 w-[72px] md:w-32">
+      <span className="text-2xl md:text-5xl font-serif text-text-main mb-1 md:mb-2">{value}</span>
+      <span className="text-[10px] md:text-sm font-sans tracking-widest text-text-light uppercase font-medium">{label}</span>
     </div>
   );
 
   return (
-    <section className="relative w-full py-20 bg-deep-bg overflow-hidden flex flex-col items-center">
-      {/* Background neon blur */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-neon-pink/10 rounded-full blur-[100px] pointer-events-none"></div>
+    <section className="relative w-full py-20 bg-pastel-bg overflow-hidden flex flex-col items-center">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] bg-pastel-pink/30 rounded-full blur-[100px] pointer-events-none"></div>
 
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
-        className="text-center z-10"
+        className="text-center z-10 px-4"
       >
-        <h2 className="text-2xl md:text-5xl font-serif text-white mb-4 tracking-wide text-glow-gold">The Wait Is Ending</h2>
-        <div className="w-24 h-1 bg-gradient-to-r from-transparent via-neon-pink to-transparent mx-auto mb-12"></div>
+        <h2 className="text-3xl md:text-5xl font-serif text-text-main mb-4 tracking-wide">Our forever begins soon</h2>
+        <div className="w-24 h-[2px] bg-gradient-to-r from-transparent via-pastel-gold to-transparent mx-auto mb-12 opacity-70"></div>
       </motion.div>
 
       <motion.div 

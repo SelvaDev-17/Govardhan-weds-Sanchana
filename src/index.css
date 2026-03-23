@@ -1,21 +1,23 @@
 @import "tailwindcss";
 
 @theme {
-  --color-neon-gold: #ffbe0b;
-  --color-neon-pink: #ff006e;
-  --color-neon-purple: #8338ec;
-  --color-deep-bg: #05020a;
-  
+  --color-pastel-bg: #FCF8F5;
+  --color-pastel-pink: #F4D6D2;
+  --color-pastel-gold: #D2B48C;
+  --color-pastel-peach: #FFE5D9;
+  --color-text-main: #4A3B32;
+  --color-text-light: #7A6357;
+
   --font-serif: "Playfair Display", serif;
   --font-sans: "Inter", sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 
 @layer base {
   body {
-    background-color: var(--color-deep-bg);
-    color: white;
+    background-color: var(--color-pastel-bg);
+    color: var(--color-text-main);
     font-family: var(--font-sans);
     overflow-x: hidden;
     margin: 0;
@@ -29,18 +31,18 @@
 
 @layer utilities {
   .glass-card {
-    @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-[0_4px_30px_rgba(0,0,0,0.5)];
+    @apply bg-white/40 backdrop-blur-md border border-white/60 shadow-[0_8px_32px_rgba(210,180,140,0.15)];
   }
   .glass-panel {
-    @apply bg-deep-bg/60 backdrop-blur-xl border border-white/5;
+    @apply bg-white/50 backdrop-blur-xl border border-white/70 shadow-xl;
   }
-  .glass-card-neon {
-    @apply bg-neon-purple/10 backdrop-blur-xl border border-neon-pink/30 shadow-[0_0_25px_rgba(255,0,110,0.25)];
+  .glass-card-pastel {
+    @apply bg-white/60 backdrop-blur-xl border border-white/80 shadow-[0_10px_40px_rgba(244,214,210,0.4)];
   }
   .text-glow-gold {
-    text-shadow: 0 0 10px rgba(255, 190, 11, 0.6), 0 0 20px rgba(255, 190, 11, 0.3);
+    text-shadow: 0 0 15px rgba(210, 180, 140, 0.4);
   }
   .text-glow-pink {
-    text-shadow: 0 0 10px rgba(255, 0, 110, 0.6), 0 0 20px rgba(255, 0, 110, 0.3);
+    text-shadow: 0 0 15px rgba(244, 214, 210, 0.6);
   }
 }
